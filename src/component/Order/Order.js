@@ -17,7 +17,11 @@ const Order = () => {
         <div>
             <h3>you have :{orders.length} </h3>
             {
-                orders.map(order => <li>User:{order.userName}  Product: {order.productName} {(new Date(order.date).toDateString('dd/MM/yyyy'))}</li>)
+                orders.map(order => <div>
+                    <h1> User:{order.userName} </h1>
+                    <h3> Product: {order.productName} </h3>
+                    <p>  {(new Date(order.date).toDateString('dd/MM/yyyy'))} </p> 
+                    </div>)
             }
         </div>
     );

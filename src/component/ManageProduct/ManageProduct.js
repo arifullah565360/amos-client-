@@ -44,7 +44,10 @@ const ManageProduct = () => {
                 {
                 products.map(pd => 
                 <div className="pd">
-                    <h1>{pd.name }</h1>
+                    <div className="pdname">
+                      <h1>{pd.name }</h1>
+                    </div>
+                    
                     
                     <button onClick={() =>handledelete(pd._id)} >Delete</button>
 

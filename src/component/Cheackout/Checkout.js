@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router';
 import { UserContext } from '../../App';
+import { Link } from 'react-router-dom';
 import './Checkout.css'
 
 const Checkout = () => {
@@ -53,7 +54,8 @@ const Checkout = () => {
 
                 </div>
                  <h1 className="total">Total:{product.price}</h1>
-                 <button onClick={handleOrderAdd} >CheckOut</button>
+                  <button className="btn" onClick={handleOrderAdd}>CheckOut</button>
+                 
 
             </div>
 

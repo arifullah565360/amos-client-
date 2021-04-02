@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import Product from '../Product/Product';
+import { Spinner } from 'react-bootstrap';
 import './Home.css'
 
 const Home = () => {
@@ -16,6 +17,9 @@ const Home = () => {
 
         return (
         <div className="home">
+            {
+                products.length === 0 && <h1>Lodding...</h1>
+            }
             {
                 products.map(product => <Product 
                     product={product}
