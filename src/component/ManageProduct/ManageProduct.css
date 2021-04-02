@@ -1,0 +1,10 @@
+.mngpd{
+    display: flex;
+}
+.pd{
+    border:1px solid black;
+    display: flex;
+}
+.pd h1{
+    margin-right: 20px;
+}
